@@ -1,0 +1,7 @@
+print((lambda x, y, z: x + 2*y + z)(x=1, z=2, y=3))
+print((lambda x, y, z=3: x + y + z)(1, 2,10))
+print((lambda x, y, z=3: x + y + z)(1, y=2))
+print((lambda *args: sum(args))(1,2,3))
+print((lambda *args: type(args))(1,2,3))
+print((lambda **kwargs: sum(kwargs.values()))(one=1, two=2, three=3))
+print((lambda x, *, y=0, z=0: x + y + z)(1, y=2, z=3))
